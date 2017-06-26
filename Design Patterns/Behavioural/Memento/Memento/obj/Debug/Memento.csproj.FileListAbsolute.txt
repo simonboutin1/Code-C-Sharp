@@ -1,0 +1,7 @@
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Memento\Memento\bin\Debug\Memento.exe.config
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Memento\Memento\bin\Debug\Memento.exe
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Memento\Memento\bin\Debug\Memento.pdb
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Memento\Memento\obj\Debug\Memento.Properties.Resources.resources
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Memento\Memento\obj\Debug\Memento.csproj.GenerateResource.Cache
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Memento\Memento\obj\Debug\Memento.exe
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Memento\Memento\obj\Debug\Memento.pdb

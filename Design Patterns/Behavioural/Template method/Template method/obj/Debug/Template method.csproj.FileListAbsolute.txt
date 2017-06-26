@@ -1,0 +1,8 @@
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\bin\Debug\Template method.exe.config
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\bin\Debug\Template method.exe
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\bin\Debug\Template method.pdb
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\obj\Debug\Template method.csprojResolveAssemblyReference.cache
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\obj\Debug\Template_method.Properties.Resources.resources
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\obj\Debug\Template method.csproj.GenerateResource.Cache
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\obj\Debug\Template method.exe
+C:\SimonBoutin\Projet Visual Studio\Design Patterns\Behavioural\Template method\Template method\obj\Debug\Template method.pdb

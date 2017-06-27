@@ -1,0 +1,10 @@
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\bin\Debug\Test Combinaison Flogen Technologies.exe.config
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\obj\Debug\Test Combinaison Flogen Technologies.csprojResolveAssemblyReference.cache
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\obj\Debug\Test_Combinaison_Flogen_Technologies.Properties.Resources.resources
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\obj\Debug\Test Combinaison Flogen Technologies.csproj.GenerateResource.Cache
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\bin\Debug\Test Combinaison Flogen Technologies.exe
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\bin\Debug\Test Combinaison Flogen Technologies.pdb
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\obj\Debug\Test Combinaison Flogen Technologies.exe
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\obj\Debug\Test Combinaison Flogen Technologies.pdb
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\obj\Debug\Test_Combinaison_Flogen_Technologies.FormCombinationFinder.resources
+C:\Simon Boutin\Projet Visual Studio\Test Combinaison Flogen Technologies\Test Combinaison Flogen Technologies\bin\Debug\Resources\ValuesFormCombinationFinder.txt

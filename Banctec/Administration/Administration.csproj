@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48674E5F-96C4-403C-8FE5-8E8D46729C34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Administration</RootNamespace>
+    <AssemblyName>Administration</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>Administration.Start</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="About Box dotNet, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\AboutBox dotNet\trunks\trunk_1.0.0\About Box dotNet\bin\Release\About Box dotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="LogEntryServer">
+      <HintPath>..\..\..\..\LogEntryServer\trunks\trunk_5.02.0\Release\LogEntryServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NetCommunTools, Version=5.1.5.44, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NetCommunTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmJobGroupingEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobGroupingEdit.Designer.cs">
+      <DependentUpon>frmJobGroupingEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJobGroupingDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJobGroupingDef.Designer.cs">
+      <DependentUpon>frmJobGroupingDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingletonResourcesManager.cs" />
+    <Compile Include="frmAboutIcons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutIcons.Designer.cs">
+      <DependentUpon>frmAboutIcons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomCalendar.cs" />
+    <Compile Include="frmCalendarAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendarAssign.Designer.cs">
+      <DependentUpon>frmCalendarAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendarEditJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendarEditJob.Designer.cs">
+      <DependentUpon>frmCalendarEditJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendarAddYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendarAddYear.Designer.cs">
+      <DependentUpon>frmCalendarAddYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalendarDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendarDef.Designer.cs">
+      <DependentUpon>frmCalendarDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkTypeDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkTypeDef.designer.cs">
+      <DependentUpon>frmWorkTypeDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkTypeEditRouting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkTypeEditRouting.Designer.cs">
+      <DependentUpon>frmWorkTypeEditRouting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemDateDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemDateDef.designer.cs">
+      <DependentUpon>frmSystemDateDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkTypeEdit.Designer.cs">
+      <DependentUpon>frmWorkTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccessGroupDef.Designer.cs">
+      <DependentUpon>frmAccessGroupDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccessGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccessGroupEdit.Designer.cs">
+      <DependentUpon>frmAccessGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccessGroupDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSortPatternCond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSortPatternCond.Designer.cs">
+      <DependentUpon>frmSortPatternCond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSortPatternPocket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSortPatternPocket.Designer.cs">
+      <DependentUpon>frmSortPatternPocket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSortPatternEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSortPatternEdit.Designer.cs">
+      <DependentUpon>frmSortPatternEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddressDef.designer.cs">
+      <DependentUpon>frmAddressDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndPointDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEndPointDef.Designer.cs">
+      <DependentUpon>frmEndPointDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddressEdit.Designer.cs">
+      <DependentUpon>frmAddressEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDupDetection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDupDetection.Designer.cs">
+      <DependentUpon>frmDupDetection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEndPointEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEndPointEdit.designer.cs">
+      <DependentUpon>frmEndPointEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSortPatternDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSortPatternDef.designer.cs">
+      <DependentUpon>frmSortPatternDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExchangeRateEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExchangeRateEdit.Designer.cs">
+      <DependentUpon>frmExchangeRateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExchangeRateDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExchangeRateDef.Designer.cs">
+      <DependentUpon>frmExchangeRateDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICalendar.cs" />
+    <Compile Include="UserManagement\Classes\AccessGroup.cs" />
+    <Compile Include="UserManagement\frmReplaceRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\frmReplaceRole.Designer.cs">
+      <DependentUpon>frmReplaceRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\frmSuspendedUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\frmSuspendedUsers.Designer.cs">
+      <DependentUpon>frmSuspendedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\frmAccessGroupModif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\frmAccessGroupModif.Designer.cs">
+      <DependentUpon>frmAccessGroupModif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\frmPassword.cs" />
+    <Compile Include="UserManagement\frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\frmRoleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\frmRoleEdit.designer.cs">
+      <DependentUpon>frmRoleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\frmUserProfileDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\frmUserProfileDef.designer.cs">
+      <DependentUpon>frmUserProfileDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\frmUserProfileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\frmUserProfileEdit.designer.cs">
+      <DependentUpon>frmUserProfileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAboutIcons.fr-CA.resx">
+      <DependentUpon>frmAboutIcons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutIcons.resx">
+      <DependentUpon>frmAboutIcons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.fr-CA.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarAssign.fr-CA.resx">
+      <DependentUpon>frmCalendarAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarAssign.resx">
+      <DependentUpon>frmCalendarAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarEditJob.fr-CA.resx">
+      <DependentUpon>frmCalendarEditJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarEditJob.resx">
+      <DependentUpon>frmCalendarEditJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarAddYear.fr-CA.resx">
+      <DependentUpon>frmCalendarAddYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarAddYear.resx">
+      <DependentUpon>frmCalendarAddYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarDef.fr-CA.resx">
+      <DependentUpon>frmCalendarDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendarDef.resx">
+      <DependentUpon>frmCalendarDef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobGroupingDef.fr-CA.resx">
+      <DependentUpon>frmJobGroupingDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobGroupingDef.resx">
+      <DependentUpon>frmJobGroupingDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobGroupingEdit.fr-CA.resx">
+      <DependentUpon>frmJobGroupingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJobGroupingEdit.resx">
+      <DependentUpon>frmJobGroupingEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkTypeDef.fr-CA.resx">
+      <DependentUpon>frmWorkTypeDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkTypeDef.resx">
+      <DependentUpon>frmWorkTypeDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkTypeEditRouting.fr-CA.resx">
+      <DependentUpon>frmWorkTypeEditRouting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkTypeEditRouting.resx">
+      <DependentUpon>frmWorkTypeEditRouting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemDateDef.fr-CA.resx">
+      <DependentUpon>frmSystemDateDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemDateDef.resx">
+      <DependentUpon>frmSystemDateDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkTypeEdit.fr-CA.resx">
+      <DependentUpon>frmWorkTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkTypeEdit.resx">
+      <DependentUpon>frmWorkTypeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccessGroupEdit.fr-CA.resx">
+      <DependentUpon>frmAccessGroupEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccessGroupEdit.resx">
+      <DependentUpon>frmAccessGroupEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccessGroupDef.fr-CA.resx">
+      <DependentUpon>frmAccessGroupDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccessGroupDef.resx">
+      <DependentUpon>frmAccessGroupDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternCond.fr-CA.resx">
+      <DependentUpon>frmSortPatternCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternCond.resx">
+      <DependentUpon>frmSortPatternCond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternEdit.fr-CA.resx">
+      <DependentUpon>frmSortPatternEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternPocket.fr-CA.resx">
+      <DependentUpon>frmSortPatternPocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternPocket.resx">
+      <DependentUpon>frmSortPatternPocket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressDef.fr-CA.resx">
+      <DependentUpon>frmAddressDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressDef.resx">
+      <DependentUpon>frmAddressDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndPointDef.fr-CA.resx">
+      <DependentUpon>frmEndPointDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndPointDef.resx">
+      <DependentUpon>frmEndPointDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressEdit.fr-CA.resx">
+      <DependentUpon>frmAddressEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressEdit.resx">
+      <DependentUpon>frmAddressEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDupDetection.resx">
+      <DependentUpon>frmDupDetection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndPointEdit.fr-CA.resx">
+      <DependentUpon>frmEndPointEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEndPointEdit.resx">
+      <DependentUpon>frmEndPointEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternDef.fr-CA.resx">
+      <DependentUpon>frmSortPatternDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternDef.resx">
+      <DependentUpon>frmSortPatternDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSortPatternEdit.resx">
+      <DependentUpon>frmSortPatternEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExchangeRateEdit.fr-CA.resx">
+      <DependentUpon>frmExchangeRateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExchangeRateEdit.resx">
+      <DependentUpon>frmExchangeRateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExchangeRateDef.fr-CA.resx">
+      <DependentUpon>frmExchangeRateDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExchangeRateDef.resx">
+      <DependentUpon>frmExchangeRateDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fr-CA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmAccessGroupModif.fr-CA.resx">
+      <DependentUpon>frmAccessGroupModif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmPassword.fr-CA.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmReplaceRole.fr-CA.resx">
+      <DependentUpon>frmReplaceRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmReplaceRole.resx">
+      <DependentUpon>frmReplaceRole.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmRoleEdit.fr-CA.resx">
+      <DependentUpon>frmRoleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmSuspendedUsers.fr-CA.resx">
+      <DependentUpon>frmSuspendedUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmSuspendedUsers.resx">
+      <DependentUpon>frmSuspendedUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmAccessGroupModif.resx">
+      <DependentUpon>frmAccessGroupModif.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmRoleEdit.resx">
+      <DependentUpon>frmRoleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmUserProfileDef.fr-CA.resx">
+      <DependentUpon>frmUserProfileDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmUserProfileDef.resx">
+      <DependentUpon>frmUserProfileDef.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmUserProfileEdit.fr-CA.resx">
+      <DependentUpon>frmUserProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\frmUserProfileEdit.resx">
+      <DependentUpon>frmUserProfileEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Authentication">
+      <Guid>{DC7F76DA-BB2A-4187-9054-52D5754AE60E}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="DAO">
+      <Guid>{00025E01-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="JobGrouping">
+      <Guid>{D2054BC6-E971-4F77-82CD-3204FE3E8489}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="USERDATALIBLib">
+      <Guid>{8E0EB343-65AE-11D5-9B7D-0008C7DA9474}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBTranslatorLib">
+      <Guid>{9D220774-15CA-11D2-8065-00609716F080}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\BancTec.PCR2P.Core.BusinessLogic\BancTec.PCR2P.Core.BusinessLogic.Administration\trunks\trunk_b5.06.00\BancTec.PCR2P.Core.BusinessLogic.Administration.csproj">
+      <Project>{652D8D8E-77C6-4FFA-A252-6ACF9E95FF38}</Project>
+      <Name>BancTec.PCR2P.Core.BusinessLogic.Administration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\BancTec.PCR2P.Core.DataBaseModel.Login\trunks\trunk_5.03.0\BancTec.PCR2P.Core.DataBaseModel.Login.csproj">
+      <Project>{ED724717-C0DE-4E95-BA92-5D3088EC0E76}</Project>
+      <Name>BancTec.PCR2P.Core.DataBaseModel.Login</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\BancTec.PCR2P.Core.DatabaseModel\BancTec.PCR2P.Core.DataBaseModel.Administration\trunks\trunk_b5.06.0\BancTec.PCR2P.Core.DataBaseModel.Administration.csproj">
+      <Project>{48D676C5-CAFD-4761-8306-D4E9C252B300}</Project>
+      <Name>BancTec.PCR2P.Core.DataBaseModel.Administration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\BancTec.PCR2P.Core.DatabaseModel\BancTec.PCR2P.Core.DatabaseModel\trunks\trunk_5.02.2\BancTec.PCR2P.Core.DatabaseModel.csproj">
+      <Project>{54310BC5-CE02-412C-AF5A-E27A11F7EFC7}</Project>
+      <Name>BancTec.PCR2P.Core.DatabaseModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\BancTec.PCR2P.Core.NetControls\trunks\trunk_5.3.1\BancTec.PCR2P.Core.NetControls.csproj">
+      <Project>{C4099594-F733-4AD8-A32E-F833C133EB7C}</Project>
+      <Name>BancTec.PCR2P.Core.NetControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ressources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC571163-7E53-49DC-B8E6-11863470A5BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EstimationCouts</RootNamespace>
+    <AssemblyName>EstimationCouts</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BD_Estimation_CoutsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Estimation_CoutsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Estimation_CoutsDataSet_CommentCollerJoint.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Estimation_CoutsDataSet_CommentCollerJoint.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Estimation_CoutsDataSet_CouleurMetal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Estimation_CoutsDataSet_CouleurMetal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Estimation_CoutsDataSet_Forme.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Estimation_CoutsDataSet_Forme.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Estimation_CoutsDataSet_OrientationTissu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Estimation_CoutsDataSet_OrientationTissu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Estimation_CoutsDataSet_TypeAssemblage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Estimation_CoutsDataSet_TypeAssemblage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Estimation_CoutsDataSet_TypeMetal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_Estimation_CoutsDataSet_TypeMetal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDimensionsForme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDimensionsForme.Designer.cs">
+      <DependentUpon>FrmDimensionsForme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstimationCouts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstimationCouts.Designer.cs">
+      <DependentUpon>FrmEstimationCouts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStructureMetallique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStructureMetallique.Designer.cs">
+      <DependentUpon>FrmStructureMetallique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralTools.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmDimensionsForme.resx">
+      <DependentUpon>FrmDimensionsForme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstimationCouts.resx">
+      <DependentUpon>FrmEstimationCouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BD_Estimation_CoutsDataSet.xsc">
+      <DependentUpon>BD_Estimation_CoutsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Estimation_CoutsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet.xss">
+      <DependentUpon>BD_Estimation_CoutsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_CommentCollerJoint.xsc">
+      <DependentUpon>BD_Estimation_CoutsDataSet_CommentCollerJoint.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_CommentCollerJoint.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Estimation_CoutsDataSet_CommentCollerJoint.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_CommentCollerJoint.xss">
+      <DependentUpon>BD_Estimation_CoutsDataSet_CommentCollerJoint.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_CouleurMetal.xsc">
+      <DependentUpon>BD_Estimation_CoutsDataSet_CouleurMetal.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_CouleurMetal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Estimation_CoutsDataSet_CouleurMetal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_CouleurMetal.xss">
+      <DependentUpon>BD_Estimation_CoutsDataSet_CouleurMetal.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_Forme.xsc">
+      <DependentUpon>BD_Estimation_CoutsDataSet_Forme.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_Forme.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Estimation_CoutsDataSet_Forme.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_Forme.xss">
+      <DependentUpon>BD_Estimation_CoutsDataSet_Forme.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_OrientationTissu.xsc">
+      <DependentUpon>BD_Estimation_CoutsDataSet_OrientationTissu.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_OrientationTissu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Estimation_CoutsDataSet_OrientationTissu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_OrientationTissu.xss">
+      <DependentUpon>BD_Estimation_CoutsDataSet_OrientationTissu.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_TypeAssemblage.xsc">
+      <DependentUpon>BD_Estimation_CoutsDataSet_TypeAssemblage.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_TypeAssemblage.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Estimation_CoutsDataSet_TypeAssemblage.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_TypeAssemblage.xss">
+      <DependentUpon>BD_Estimation_CoutsDataSet_TypeAssemblage.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_TypeMetal.xsc">
+      <DependentUpon>BD_Estimation_CoutsDataSet_TypeMetal.xsd</DependentUpon>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_TypeMetal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_Estimation_CoutsDataSet_TypeMetal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_Estimation_CoutsDataSet_TypeMetal.xss">
+      <DependentUpon>BD_Estimation_CoutsDataSet_TypeMetal.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmStructureMetallique.resx">
+      <DependentUpon>FrmStructureMetallique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\logo.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

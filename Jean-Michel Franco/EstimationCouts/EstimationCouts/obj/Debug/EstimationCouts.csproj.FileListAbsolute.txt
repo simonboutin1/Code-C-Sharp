@@ -1,0 +1,21 @@
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\bin\Debug\EstimationCouts.exe.config
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.FrmEstimationCouts.resources
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.csproj.GenerateResource.Cache
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\bin\Debug\EstimationCouts.exe
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\bin\Debug\EstimationCouts.pdb
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.exe
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.pdb
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\bin\Debug\Resources\logo.ico
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.csprojResolveAssemblyReference.cache
+C:\SimonBoutin\Contrats\Jean-Michel Franco\Projet Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.FrmDimensionsForme.resources
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\bin\Debug\EstimationCouts.exe.config
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.exe
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.pdb
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\bin\Debug\Resources\logo.ico
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\bin\Debug\EstimationCouts.exe
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\bin\Debug\EstimationCouts.pdb
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.FrmDimensionsForme.resources
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.FrmEstimationCouts.resources
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.csproj.GenerateResource.Cache
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.csprojResolveAssemblyReference.cache
+C:\SimonBoutin\Contrats\Jean-Michel_Franco\Projet_Estimation\EstimationCouts\EstimationCouts\obj\Debug\EstimationCouts.FrmStructureMetallique.resources
